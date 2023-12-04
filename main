@@ -1,0 +1,70 @@
+# Take input for names
+name = input("Enter the first name: ")
+name2 = input("Enter the second name: ")
+
+# Assigning meaningful names
+chr_name = name
+chr2_name = name2
+
+chr_num = 12
+chr2_num = 12
+
+chr_relics = 5
+chr2_relics = 5
+
+chr_dam = 4321
+chr2_dam = 3212
+
+chr_result = chr_num * chr_relics * chr_dam
+chr2_result = chr2_num * chr2_relics * chr2_dam
+
+# Comparing the names of Kafka and Himeko
+if chr_name == chr2_name:
+    print("They are a good pairing.")
+else:
+    print("They are not a pairing.")
+
+# Comparing the damage potential of Kafka and Himeko
+print("Do they have similar or identical damage potential?")
+if chr_dam == chr2_dam:
+    print("They have the same damage potential.")
+else:
+    print("They do not have the same damage potential.")
+
+# Checking if Kafka and Himeko should be on the same team based on damage potential
+print("Should they be on the same team with their current damage potential?")
+if chr_num == chr2_num:
+    print("Then they have to be on the same team.")
+else:
+    print("Then they shouldn't be on the same team.")
+
+# Comparing the number of relics
+print("How are they doing relics wise?")
+if chr_relics < chr2_relics:
+    print("Kafka needs more relics.")
+elif chr_relics > chr2_relics:
+    print("Kafka has better relics than Himeko.")
+else:
+    print("Kafka and Himeko have the same number of relics.")
+
+# Comparing the damage potential results
+print("What is their damage potential result?")
+if chr_result == chr2_result:
+    print("Kafka and Himeko have the same amount of damage potential.")
+else:
+    print("Himeko is not as strong as Kafka.")
+
+print(name, "Result:", chr_result)
+print(name2, "Result:", chr2_result)
+
+# Check if the results are greater than 0
+print("\nResults:")
+if chr_result > 0:
+    print(name, "is well built.")
+else:
+    print(name, "needs more work.")
+
+if chr2_result > 0:
+    print(name2, "is well built.")
+else:
+    print(name2, "needs more work.")
